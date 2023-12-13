@@ -1,0 +1,17 @@
+# Input the salary and years of service from the user
+salary = float(input("Enter your salary: "))
+years_of_service = int(input("Enter your years of service: "))
+
+# Determine bonus based on years of service
+if years_of_service > 10:
+    bonus_percentage = 12
+elif 6 <= years_of_service <= 10:
+    bonus_percentage = 10
+else:
+    bonus_percentage = 8
+
+# Calculate bonus amount
+bonus_amount = (bonus_percentage / 100) * salary
+
+# Print the net bonus
+print(f"Based on your {years_of_service} years of service, your bonus is {bonus_amount:.2f} dollars.")
